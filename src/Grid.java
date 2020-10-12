@@ -1,18 +1,27 @@
 public class Grid extends Cell {
 
-    private boolean[] cells;
+    int width;
+    int height;
 
     @Override
     public String getLife(boolean Rules) {
         return super.getLife(Rules);
+
     }
 
-    public Grid(String color, boolean[] cells) {
+    boolean[] grid = new boolean[36];
+    public Grid(String color, boolean[] grid) {
         super(color);
-        this.cells = cells;
+        this.grid = grid;
+
+        for (int i=0; i < grid.length; i++) {
+            grid([i]=(Math.random());
+            if (Math.random() < 0.5){
+                grid[i] = true;
+            }
+
+        }
+
     }
 
-    public Grid(boolean[] cells) {
-        this.cells = cells;
-    }
 }

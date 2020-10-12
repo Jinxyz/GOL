@@ -27,7 +27,7 @@ public class GameRunner extends Canvas implements Runnable {
         Dimension size = new Dimension(scale*w, scale*h);
         setPreferredSize(size);
         frame = new JFrame();
-        this.game = new GameOfLife(w,h);
+        this.game = new Game(w,h);
     }
 
     private void draw() {
